@@ -1,0 +1,31 @@
+1. LPAD / RPAD
+SELECT title, RPAD(title, 20, '*') FROM sakila.film;
+SELECT LPAD('Hi', 5, '0');
+2. SUBSTRING
+SELECT SUBSTRING(title, 3, 9) FROM sakila.film;
+SELECT SUBSTRING('Database', 1, 4);
+3. CONCAT
+SELECT CONCAT('Hello', ' ', 'Naresh');
+SELECT CONCAT('Order ID: ', 101);
+4. REVERSE
+SELECT REVERSE('Naresh');
+SELECT REVERSE(title) FROM sakila.film;
+5. LENGTH
+SELECT LENGTH('MySQL');
+SELECT LENGTH('Sindhu');
+6. LOCATE + SUBSTRING
+SELECT LOCATE('a', 'god');
+SELECT SUBSTRING('sindhu@gmail.com', 5);
+8. UPPER & LOWER
+SELECT LOWER('SQL IS GOOD');
+SELECT UPPER('awesome');
+9. LEFT & RIGHT
+SELECT LEFT('Welcome', 5);
+SELECT RIGHT('Coding', 3);
+10. REPLACE
+SELECT REPLACE('banana', 'a', 'o');
+11. Date Functions
+  DATEDIFF()
+  SELECT DATEDIFF('2024-01-10','2024-01-05');
+  SELECT YEAR('2023-05-20');
+  
